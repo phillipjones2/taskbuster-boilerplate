@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-23 03:50+0000\n"
+"POT-Creation-Date: 2015-07-23 08:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,11 @@ msgstr ""
 msgid "Spanish(Mexico)"
 msgstr ""
 
-#: taskbuster/templates/taskbuster/index.html:10
+#: taskbuster/templates/taskbuster/index.html:11
 msgid "Welcome to TaskBuster!"
 msgstr "Bienvenido a TaskBuster!"
 
-#: taskbuster/templates/taskbuster/index.html:11
+#: taskbuster/templates/taskbuster/index.html:12
 msgid ""
 "TaskBuster is a simple Task manager that helps you organize your daylife. </"
 "br> You can create todo lists, periodic tasks and more! </br></br> If you "
@@ -41,6 +41,6 @@ msgid ""
 "tutorial.com"
 msgstr ""
 "TaskBuster es un gestor de tareas simples que le ayuda a organizar su "
-"daylife. </br>  Puede crear listas de tareas pendientes , tareas "
-"periódicas y más! </br></br> Si usted desea aprender cómo se creó , o "
-"crear usted mismo!, cheque www.django-tutorial.com"
+"daylife. </br>  Puede crear listas de tareas pendientes , tareas periódicas "
+"y más! </br></br> Si usted desea aprender cómo se creó , o crear usted "
+"mismo!, cheque www.django-tutorial.com"
