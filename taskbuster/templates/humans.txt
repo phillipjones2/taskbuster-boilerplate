@@ -4,12 +4,16 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
+    Phillip Jones -- Developer -- 
 
 # THANKS
 
-    <name>
+    Thanks fo Marina Mele (@marina_mele) for the awesome Django tutorial
 
 # TECHNOLOGY COLOPHON
 
+    Django
+    HTML5 Boilerplate
+    Twitter Bootstrap
     HTML5, CSS3
     jQuery, Modernizr

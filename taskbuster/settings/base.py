@@ -51,6 +51,7 @@ INSTALLED_APPS = (
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -58,6 +59,13 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+)
+
+from django.utils.translation import ugettext_lazy as _
+LANGUAGES = (
+    ('en', _('English')),
+    ('ca', _('Catalan')),
+    ('es-mx',_('Spanish(Mexico)'))
 )
 
 ROOT_URLCONF = 'taskbuster.urls'
@@ -73,6 +81,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.i18n',
             ],
         },
     },
@@ -94,17 +103,26 @@ DATABASES = {
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
-
+    
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
+
+TIME_ZONE = 'Europe/Madrid'
 
 USE_I18N = True
 
 USE_L10N = True
 
 USE_TZ = True
-
+    
+import datetime
+from django.utils.timezone import utc
+ 
+now_naive = datetime.datetime.now()
+now_aware = datetime.datetime.utcnow().replace(tzinfo=utc)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
